@@ -1,0 +1,297 @@
+labuser@labuser-virtual-machine:~$ git --version
+git version 2.34.1
+labuser@labuser-virtual-machine:~$ mkdir hello
+labuser@labuser-virtual-machine:~$ cd hello
+labuser@labuser-virtual-machine:~/hello$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/labuser/hello/.git/
+labuser@labuser-virtual-machine:~/hello$ git init
+Reinitialized existing Git repository in /home/labuser/hello/.git/
+labuser@labuser-virtual-machine:~/hello$ echo "hello" > hello
+labuser@labuser-virtual-machine:~/hello$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	hello
+
+nothing added to commit but untracked files present (use "git add" to track)
+labuser@labuser-virtual-machine:~/hello$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+labuser@labuser-virtual-machine:~/hello$ git add .
+labuser@labuser-virtual-machine:~/hello$ git commit -m "changes1"
+[master (root-commit) 6bff670] changes1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello
+labuser@labuser-virtual-machine:~/hello$ ^C
+labuser@labuser-virtual-machine:~/hello$ ^C
+labuser@labuser-virtual-machine:~/hello$ ^C
+labuser@labuser-virtual-machine:~/hello$ ^C
+labuser@labuser-virtual-machine:~/hello$ ^C
+labuser@labuser-virtual-machine:~/hello$ ^C
+labuser@labuser-virtual-machine:~/hello$ ^C
+labuser@labuser-virtual-machine:~/hello$ ^C
+labuser@labuser-virtual-machine:~/hello$ ^C
+labuser@labuser-virtual-machine:~/hello$ git remote add origin https://github.com/Cello786/rehaan.git
+labuser@labuser-virtual-machine:~/hello$ git remote -v origin https://github.com/Cello786/rehaan.git (fetch) orign https://github.com/Cello786/rehaan.git (push)
+bash: syntax error near unexpected token `('
+labuser@labuser-virtual-machine:~/hello$ git remote -v origin http://github.com/Cello786/rehaan.git(fetch) origin http://github.com/Cello786/rehaan.git(push)
+bash: syntax error near unexpected token `('
+labuser@labuser-virtual-machine:~/hello$ git remote-v origin https:/github.com/Cello786/rehaan.git(fetch) origin  https//github.com/Cello786/rehaan.get(push)
+bash: syntax error near unexpected token `('
+labuser@labuser-virtual-machine:~/hello$ git remote -v
+origin	https://github.com/Cello786/rehaan.git (fetch)
+origin	https://github.com/Cello786/rehaan.git (push)
+labuser@labuser-virtual-machine:~/hello$ git push -u origin master
+Username for 'https://github.com': Cello786
+Password for 'https://Cello786@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Cello786/rehaan.git/'
+labuser@labuser-virtual-machine:~/hello$ git push -u origin master
+Username for 'https://github.com': Cello786
+Password for 'https://Cello786@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Cello786/rehaan.git/'
+labuser@labuser-virtual-machine:~/hello$ git push -u origin master
+Username for 'https://github.com': Cello786
+Password for 'https://Cello786@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/Cello786/rehaan.git/'
+labuser@labuser-virtual-machine:~/hello$ git push -u  origin master
+Username for 'https://github.com': Cello786
+Password for 'https://Cello786@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Cello786/rehaan.git/'
+labuser@labuser-virtual-machine:~/hello$ git push -u  origin master
+Username for 'https://github.com': Cello786
+Password for 'https://Cello786@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 221 bytes | 221.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Cello786/rehaan.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+labuser@labuser-virtual-machine:~/hello$ ls hello
+hello
+labuser@labuser-virtual-machine:~/hello$ nano hello
+labuser@labuser-virtual-machine:~/hello$ git add .
+labuser@labuser-virtual-machine:~/hello$ git commit -m "changes2"
+[master 57f7c02] changes2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello2
+labuser@labuser-virtual-machine:~/hello$ git push -u origin master
+Username for 'https://github.com': Cello786
+Password for 'https://Cello786@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 279 bytes | 279.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Cello786/rehaan.git
+   6bff670..57f7c02  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+labuser@labuser-virtual-machine:~/hello$ git branch
+* master
+labuser@labuser-virtual-machine:~/hello$ git  branch welcome
+labuser@labuser-virtual-machine:~/hello$ git checkout welcome
+Switched to branch 'welcome'
+labuser@labuser-virtual-machine:~/hello$ git branch
+  master
+* welcome
+labuser@labuser-virtual-machine:~/hello$ echo "test3" >file1
+labuser@labuser-virtual-machine:~/hello$ echo "test4" >file2
+labuser@labuser-virtual-machine:~/hello$ ls -li
+total 16
+6162012 -rw-rw-r-- 1 labuser labuser 6 Dec 14 05:47 file1
+6162047 -rw-rw-r-- 1 labuser labuser 6 Dec 14 05:48 file2
+6162014 -rw-rw-r-- 1 labuser labuser 6 Dec 14 04:17 hello
+6162036 -rw-rw-r-- 1 labuser labuser 7 Dec 14 05:41 hello2
+labuser@labuser-virtual-machine:~/hello$ git add .
+labuser@labuser-virtual-machine:~/hello$ git push -u "change 4"
+fatal: 'change 4' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+labuser@labuser-virtual-machine:~/hello$ git commit -m "changes4"
+[welcome 5656b4d] changes4
+ 2 files changed, 2 insertions(+)
+ create mode 100644 file1
+ create mode 100644 file2
+labuser@labuser-virtual-machine:~/hello$ git push origin -u welcome
+Username for 'https://github.com': Cello786
+Password for 'https://Cello786@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 348 bytes | 348.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'welcome' on GitHub by visiting:
+remote:      https://github.com/Cello786/rehaan/pull/new/welcome
+remote: 
+To https://github.com/Cello786/rehaan.git
+ * [new branch]      welcome -> welcome
+Branch 'welcome' set up to track remote branch 'welcome' from 'origin'.
+labuser@labuser-virtual-machine:~/hello$ git push origin -u welcome
+Username for 'https://github.com': Cello786
+Password for 'https://Cello786@github.com': 
+Branch 'welcome' set up to track remote branch 'welcome' from 'origin'.
+Everything up-to-date
+labuser@labuser-virtual-machine:~/hello$ git branch
+  master
+* welcome
+labuser@labuser-virtual-machine:~/hello$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+labuser@labuser-virtual-machine:~/hello$  git merge welcome
+Updating 57f7c02..5656b4d
+Fast-forward
+ file1 | 1 +
+ file2 | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 file1
+ create mode 100644 file2
+labuser@labuser-virtual-machine:~/hello$  git log -p
+commit 5656b4d935e8fe6545b8d1d5b6639375e738f690 (HEAD -> master, origin/welcome, welcome)
+Author: David Robichaud <david.robichaud@skillsoft.com>
+Date:   Sat Dec 14 05:50:30 2024 -0500
+
+    changes4
+
+diff --git a/file1 b/file1
+new file mode 100644
+index 0000000..df6b0d2
+--- /dev/null
++++ b/file1
+@@ -0,0 +1 @@
++test3
+diff --git a/file2 b/file2
+new file mode 100644
+index 0000000..d234c5e
+--- /dev/null
++++ b/file2
+@@ -0,0 +1 @@
++test4
+
+commit 57f7c029af7c0571116384d097e93642df44dfc7 (origin/master)
+Author: David Robichaud <david.robichaud@skillsoft.com>
+Date:   Sat Dec 14 05:44:11 2024 -0500
+
+    changes2
+labuser@labuser-virtual-machine:~/hello$ git log --online
+fatal: unrecognized argument: --online
+labuser@labuser-virtual-machine:~/hello$ git log --oneline
+5656b4d (HEAD -> master, origin/welcome, welcome) changes4
+57f7c02 (origin/master) changes2
+6bff670 changes1
+labuser@labuser-virtual-machine:~/hello$ cd
+labuser@labuser-virtual-machine:~$ git clone https://github.com/Cello786/rehaan.git
+Cloning into 'rehaan'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 10 (delta 0), reused 10 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (10/10), done.
+labuser@labuser-virtual-machine:~$ ls -li
+total 52
+6029410 drwxr-xr-x 2 labuser labuser 4096 Sep 12  2023 Desktop
+6029414 drwxr-xr-x 3 labuser labuser 4096 Dec 15  2023 Documents
+6029411 drwxr-xr-x 2 labuser labuser 4096 Dec 18  2023 Downloads
+6036475 -rw-rw-r-- 1 labuser labuser   53 Dec 18  2023 execute.yml
+6161985 drwxrwxr-x 3 labuser labuser 4096 Dec 14 05:56 hello
+6029415 drwxr-xr-x 2 labuser labuser 4096 Sep 12  2023 Music
+6029416 drwxr-xr-x 2 labuser labuser 4096 Sep 12  2023 Pictures
+6029413 drwxr-xr-x 2 labuser labuser 4096 Sep 12  2023 Public
+6160412 drwxrwxr-x 3 labuser labuser 4096 Dec 14 06:06 rehaan
+6030259 drwxrwxr-x 2 labuser labuser 4096 Dec 18  2023 repos
+6029322 drwx------ 6 labuser labuser 4096 Dec 15  2023 snap
+6029412 drwxr-xr-x 2 labuser labuser 4096 Sep 12  2023 Templates
+6029418 drwxr-xr-x 2 labuser labuser 4096 Sep 12  2023 Videos
+labuser@labuser-virtual-machine:~$ cd rehaan
+labuser@labuser-virtual-machine:~/rehaan$ ls hello
+hello
+labuser@labuser-virtual-machine:~/rehaan$ mkdir  wel1
+labuser@labuser-virtual-machine:~/rehaan$ cd wel1
+labuser@labuser-virtual-machine:~/rehaan/wel1$ git pull https://github.com/Cello786/rehaan.git
+From https://github.com/Cello786/rehaan
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+labuser@labuser-virtual-machine:~/rehaan/wel1$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/labuser/rehaan/wel1/.git/
+labuser@labuser-virtual-machine:~/rehaan/wel1$ git init .
+Reinitialized existing Git repository in /home/labuser/rehaan/wel1/.git/
+labuser@labuser-virtual-machine:~/rehaan/wel1$ git remote -v
+labuser@labuser-virtual-machine:~/rehaan/wel1$ git pull https://github.com/Cello786/rehann.git master
+Username for 'https://github.com': Cello786
+Password for 'https://Cello786@github.com': 
+remote: Repository not found.
+fatal: repository 'https://github.com/Cello786/rehann.git/' not found
+labuser@labuser-virtual-machine:~/rehaan/wel1$ cd rehaan
+bash: cd: rehaan: No such file or directory
+labuser@labuser-virtual-machine:~/rehaan/wel1$ ls
+labuser@labuser-virtual-machine:~/rehaan/wel1$ cd wel1
+bash: cd: wel1: No such file or directory
+labuser@labuser-virtual-machine:~/rehaan/wel1$ mkdir  wel1
+labuser@labuser-virtual-machine:~/rehaan/wel1$ cd wel1
+labuser@labuser-virtual-machine:~/rehaan/wel1/wel1$ git pull https://github.com/Cello786/rehaan.git
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (6/6), 448 bytes | 448.00 KiB/s, done.
+From https://github.com/Cello786/rehaan
+ * branch            HEAD       -> FETCH_HEAD
+labuser@labuser-virtual-machine:~/rehaan/wel1/wel1$ git branch
+* master
+labuser@labuser-virtual-machine:~/rehaan/wel1/wel1$ ls -li
+total 0
+labuser@labuser-virtual-machine:~/rehaan/wel1/wel1$ git branch m1
+labuser@labuser-virtual-machine:~/rehaan/wel1/wel1$ git checkout m1
+Switched to branch 'm1'
+labuser@labuser-virtual-machine:~/rehaan/wel1/wel1$ echo "apple1" > fruit
+labuser@labuser-virtual-machine:~/rehaan/wel1/wel1$ ls
+fruit
+labuser@labuser-virtual-machine:~/rehaan/wel1/wel1$ git checkout master
+Switched to branch 'master'
+labuser@labuser-virtual-machine:~/rehaan/wel1/wel1$ ls
+fruit
+labuser@labuser-virtual-machine:~/rehaan/wel1/wel1$ git checkout  m1
+Switched to branch 'm1'
+labuser@labuser-virtual-machine:~/rehaan/wel1/wel1$ ls
+fruit
+labuser@labuser-virtual-machine:~/rehaan/wel1/wel1$ git rebase master
+Current branch m1 is up to date.
+labuser@labuser-virtual-machine:~/rehaan/wel1/wel1$ ^C
+labuser@labuser-virtual-machine:~/rehaan/wel1/wel1$ 
+
